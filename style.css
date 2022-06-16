@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --font: "Outfit", sans-serif;
+}
+
+body {
+  background-color: var(--main-bg);
+  font-family: var(--font);
+}
+
+.card {
+  box-sizing: border-box;
+  width: 350px;
+  height: 595px;
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nft {
+  position: relative;
+}
+
+.nft-photo {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.nft-photo:active {
+  filter: opacity(50%);
+}
+
+.nft-view {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: cyan;
+}
+
+.nft-view:active {
+  opacity: 50%;
+}
+
+.info-name {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.info-name:active {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.info-description {
+  color: var(--soft-blue);
+  font-size: 18px;
+}
+
+.visual {
+  /* display: grid;
+  grid-template-columns: 1fr / 1fr; */
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-value {
+  color: var(--cyan);
+  /* grid-column: 1; */
+  display: flex;
+  flex-grow: 1;
+  gap: 6px;
+}
+
+.info-time {
+  color: var(--soft-blue);
+  /* grid-column: 2; 
+  justify-self: end; */
+  display: flex;
+  flex-grow: 1;
+  justify-content: end;
+  gap: 6px;
+}
+
+.clock {
+  width: 20px;
+}
+
+.line {
+  border: none;
+  height: 1px;
+  background-color: var(--line);
+}
+
+.author {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+}
+
+.avatar {
+  width: 32px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  align-self: center;
+}
+
+.credit {
+  color: var(--soft-blue);
+  align-self: center;
+}
+
+.credit-name {
+  color: var(--white);
+}
+
+.credit-name:active {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.attribution {
+  color: var(--white);
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
