@@ -22,14 +22,15 @@ body {
   background-color: var(--card-bg);
   padding: 20px;
   border-radius: 10px;
-  position: absolute;
-  top: 50%;
+  position: relative;
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 
 .nft {
-  position: relative;
+  position: absolute;
+  left: 50%;
 }
 
 .nft-bg {
