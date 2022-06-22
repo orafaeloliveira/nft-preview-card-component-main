@@ -22,24 +22,20 @@ body {
   background-color: var(--card-bg);
   padding: 20px;
   border-radius: 10px;
-  position: relative;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-}
-
-.nft {
   position: absolute;
+  top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .nft-bg {
   padding: 50%;
-  position: absolute;
+  position: relative;
   border-radius: 10px;
 }
 
 .nft-bg:active {
+  opacity: 0.5;
   background-color: rgba(0, 255, 247, 0.5);
 }
 
