@@ -29,24 +29,24 @@ body {
 }
 
 .nft-bg {
-  padding: 50%;
+  opacity: 1;
   position: relative;
   border-radius: 10px;
+  background-color: var(--cyan);
 }
 
-.nft-bg:active {
+/* .nft-bg:hover {
   opacity: 0.5;
-  background-color: rgba(0, 255, 247, 0.5);
-}
+} */
 
 .nft-photo {
   width: 100%;
   border-radius: 10px;
 }
 
-/* .nft-photo:active {
-  filter: opacity(50%);
-} */
+.nft-photo:hover {
+  opacity: 0.5;
+}
 
 .nft-view {
   position: absolute;
@@ -59,7 +59,7 @@ body {
   /* border-radius: 10px; */
 }
 
-.nft-view:active {
+.nft-view:hover {
   opacity: 1;
   cursor: pointer;
 }
