@@ -18,7 +18,7 @@ body {
 .card {
   box-sizing: border-box;
   width: 350px;
-  height: 595px;
+  height: fit-content;
   background-color: var(--card-bg);
   padding: 20px;
   border-radius: 10px;
@@ -29,10 +29,10 @@ body {
 }
 
 .nft-bg {
-  opacity: 1;
+  display: block;
   position: relative;
   border-radius: 10px;
-  background-color: var(--cyan);
+  content: '';
 }
 
 /* .nft-bg:hover {
@@ -40,12 +40,14 @@ body {
 } */
 
 .nft-photo {
+  position: relative;
   width: 100%;
   border-radius: 10px;
+  display: block;
 }
 
 .nft-photo:hover {
-  opacity: 0.5;
+  filter: opacity(50%);
 }
 
 .nft-view {
@@ -53,15 +55,15 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0;
-  /* background-color: cyan; */
+  background-color: var(--cyan);
   padding: 42%;
-  /* border-radius: 10px; */
+  border-radius: 10px;
+  filter: opacity(0%);
 }
 
 .nft-view:hover {
-  opacity: 1;
   cursor: pointer;
+  filter: opacity(50%);
 }
 
 .info-name {
