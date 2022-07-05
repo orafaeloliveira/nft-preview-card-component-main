@@ -134,6 +134,19 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 375px) {
+  .card {
+    width: 93vw;
+    height: fit-content;
+  }
+  .nft-bg {
+    width: 100%;
+  }
+  .info-visual {
+    margin-bottom: 16px;
+  }
+}
+
 /* .attribution {
   color: var(--white);
   position: absolute;
