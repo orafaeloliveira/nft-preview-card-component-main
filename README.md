@@ -33,7 +33,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 - CSS custom properties and variables
 - CSS Grid & Flex
 - Media Query
-- Mobile-first workflow
 
 ## Author
 
