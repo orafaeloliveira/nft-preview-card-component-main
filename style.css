@@ -6,6 +6,7 @@
   --cyan2: hsla(178, 100%, 50%, 0.5);
   --main-bg: hsl(217, 54%, 11%);
   --card-bg: hsl(216, 50%, 16%);
+  --card-shadow: hsl(216, 51%, 10%);
   --line: hsl(215, 32%, 27%);
   --white: hsl(0, 0%, 100%);
   --font: "Outfit", sans-serif;
@@ -19,14 +20,15 @@ body {
 .card {
   box-sizing: border-box;
   width: 350px;
-  height: fit-content;
+  height: 595px;
   background-color: var(--card-bg);
-  padding: 20px;
-  border-radius: 10px;
+  padding: 24px;
+  border-radius: 14px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: 0px 25px 6px 20px var(--card-shadow);
 }
 
 .nft-bg {
@@ -55,6 +57,7 @@ body {
   cursor: pointer;
   opacity: 1;
   background-color: var(--cyan2);
+  transition: 0.5s;
 }
 
 .info-name {
@@ -73,8 +76,8 @@ body {
   font-size: 18px;
 }
 
-.visual {
-  margin-bottom: 18px;
+.info-visual {
+  margin-bottom: 26px;
   display: flex;
   justify-content: space-between;
 }
